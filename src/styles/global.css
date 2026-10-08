@@ -250,17 +250,23 @@ section[data-theme='light'] {
 }
 
 .btn:hover {
-  transform: translateY(-2px);
+  translate: 0 -2px;
 }
 
 .btn:active {
-  transform: translateY(0);
+  translate: 0 0;
 }
 
 .btn--primary {
   background: var(--whatsapp);
   color: var(--whatsapp-fg);
   box-shadow: 0 14px 34px var(--whatsapp-glow);
+  animation: wa-pulse 3.2s ease-in-out infinite;
+}
+
+.btn--primary:hover {
+  background: var(--whatsapp-strong);
+  box-shadow: 0 20px 50px var(--whatsapp-glow-strong);
 }
 
 .btn--primary::after {
@@ -531,14 +537,29 @@ section[data-theme='light'] {
 
 .reveal {
   opacity: 0;
-  transform: translateY(26px);
-  transition: opacity 780ms var(--ease), transform 780ms var(--ease);
+  transform: translateY(34px);
+  transition: opacity 700ms var(--ease), transform 700ms var(--ease);
   transition-delay: var(--reveal-delay, 0ms);
-  will-change: opacity, transform;
 }
 
 .reveal.is-visible {
   opacity: 1;
+  transform: none;
+}
+
+.reveal.reveal--zoom {
+  transform: translateY(28px) scale(0.94);
+}
+
+.reveal.reveal--zoom.is-visible {
+  transform: none;
+}
+
+.reveal.reveal--left {
+  transform: translateX(-38px);
+}
+
+.reveal.reveal--left.is-visible {
   transform: none;
 }
 
@@ -581,22 +602,55 @@ section[data-theme='light'] {
   }
 }
 
+@keyframes wa-pulse {
+  0%,
+  100% {
+    scale: 1;
+    box-shadow: 0 12px 30px var(--whatsapp-glow);
+  }
+  50% {
+    scale: 1.025;
+    box-shadow: 0 20px 48px var(--whatsapp-glow-strong);
+  }
+}
+
+@keyframes wa-ring {
+  0% {
+    opacity: 0.55;
+    transform: scale(1);
+  }
+  80%,
+  100% {
+    opacity: 0;
+    transform: scale(1.65);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
 
   .reveal {
-    opacity: 1;
-    transform: none;
-    transition: none;
+    transform: translateY(16px);
+    transition-duration: 450ms;
   }
 
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.001ms !important;
+  .reveal.reveal--zoom {
+    transform: translateY(14px) scale(0.98);
+  }
+
+  .reveal.reveal--left {
+    transform: translateX(-18px);
+  }
+
+  .reveal.is-visible,
+  .reveal.reveal--zoom.is-visible,
+  .reveal.reveal--left.is-visible {
+    transform: none;
+  }
+
+  .btn--primary {
+    animation-duration: 4.6s;
   }
 }

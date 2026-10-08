@@ -42,7 +42,7 @@ export function Gallery() {
 
         <div className="gallery">
           {gallery.map((item, position) => (
-            <Reveal key={item.id} delay={(position % 3) * 80} className="gallery__item">
+            <Reveal key={item.id} delay={(position % 3) * 90} className="gallery__item reveal--zoom">
               <button
                 type="button"
                 className="gallery__card"

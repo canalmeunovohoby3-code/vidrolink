@@ -13,8 +13,20 @@
   font-weight: 800;
   font-size: 0.94rem;
   box-shadow: 0 16px 36px var(--whatsapp-glow);
-  transition: transform var(--t-base) var(--ease), background-color var(--t-fast) linear,
+  animation: wa-pulse 2.8s ease-in-out infinite;
+  transition: translate var(--t-base) var(--ease), background-color var(--t-fast) linear,
     box-shadow var(--t-base) var(--ease);
+}
+
+.wa-float::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  box-shadow: 0 0 0 2px var(--whatsapp);
+  animation: wa-ring 2.8s ease-out infinite;
+  pointer-events: none;
 }
 
 .wa-float svg {
@@ -24,7 +36,7 @@
 }
 
 .wa-float:hover {
-  transform: translateY(-3px);
+  translate: 0 -3px;
   background: var(--whatsapp-strong);
   box-shadow: 0 20px 44px var(--whatsapp-glow-strong);
 }

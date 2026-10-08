@@ -23,7 +23,7 @@ export function Services() {
 
         <div className="services__grid">
           {services.map((service, index) => (
-            <Reveal key={service.id} delay={(index % 2) * 90} className="services__cell">
+            <Reveal key={service.id} delay={index * 80} className="services__cell">
               <article className="service-card card">
                 <div className="service-card__head">
                   <span className="service-card__icon">

@@ -1,7 +1,7 @@
 .section-reveal {
   opacity: 0;
-  transform: translateY(40px) scale(0.99);
-  transition: opacity 900ms var(--ease), transform 900ms var(--ease);
+  transform: translateY(36px) scale(0.995);
+  transition: opacity 680ms var(--ease), transform 680ms var(--ease);
 }
 
 .section-reveal.is-visible {
@@ -9,23 +9,16 @@
   transform: none;
 }
 
-.section-reveal .reveal {
-  opacity: 1;
-  transform: none;
-  transition: none;
-}
-
 @media (max-width: 640px) {
   .section-reveal {
-    transform: translateY(24px);
+    transform: translateY(22px);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .section-reveal,
-  .section-reveal.is-visible {
-    transition-duration: 800ms !important;
-    transform: translateY(24px);
+  .section-reveal {
+    transform: translateY(14px);
+    transition-duration: 480ms;
   }
 
   .section-reveal.is-visible {

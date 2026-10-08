@@ -8,7 +8,7 @@ export function CtaBanner() {
   return (
     <RevealedSection id="contato" className="section cta">
       <div className="container">
-        <Reveal className="cta__card">
+        <Reveal className="cta__card reveal--zoom">
           <span className="cta__glow" aria-hidden="true" />
           <h2 className="cta__title">{ctaBanner.title}</h2>
           <p className="cta__desc">{ctaBanner.description}</p>

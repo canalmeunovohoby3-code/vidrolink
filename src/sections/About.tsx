@@ -23,7 +23,7 @@ export function About() {
           </div>
         </div>
 
-        <Reveal delay={140} className="about__aside">
+        <Reveal delay={140} className="about__aside reveal--left">
           <ul className="about__highlights">
             {about.highlights.map((highlight, index) => (
               <li key={highlight.title} className="about__highlight">

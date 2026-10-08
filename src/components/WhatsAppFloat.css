@@ -1,0 +1,46 @@
+.wa-float {
+  position: fixed;
+  right: clamp(16px, 3vw, 28px);
+  bottom: clamp(16px, 3vw, 28px);
+  z-index: 90;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px 12px 14px;
+  border-radius: var(--r-pill);
+  background: var(--whatsapp);
+  color: var(--whatsapp-fg);
+  font-weight: 800;
+  font-size: 0.94rem;
+  box-shadow: 0 16px 36px var(--whatsapp-glow);
+  transition: transform var(--t-base) var(--ease), background-color var(--t-fast) linear,
+    box-shadow var(--t-base) var(--ease);
+}
+
+.wa-float svg {
+  width: 24px;
+  height: 24px;
+  flex: none;
+}
+
+.wa-float:hover {
+  transform: translateY(-3px);
+  background: var(--whatsapp-strong);
+  box-shadow: 0 20px 44px var(--whatsapp-glow-strong);
+}
+
+@media (max-width: 520px) {
+  .wa-float {
+    padding: 13px;
+    border-radius: 50%;
+  }
+
+  .wa-float svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .wa-float__label {
+    display: none;
+  }
+}

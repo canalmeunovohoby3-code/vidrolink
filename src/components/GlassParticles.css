@@ -1,0 +1,89 @@
+.glass-layer {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+
+.glass-particle {
+  position: absolute;
+  display: block;
+  border-radius: 42% 30% 46% 34% / 36% 44% 30% 46%;
+  background: linear-gradient(
+    135deg,
+    oklch(100% 0 0 / 0.24) 0%,
+    oklch(100% 0 0 / 0.04) 55%,
+    oklch(96% 0.05 214 / 0.14) 100%
+  );
+  border: 1px solid oklch(100% 0 0 / 0.22);
+  box-shadow: inset 0 1px 0 oklch(100% 0 0 / 0.3), 0 6px 18px oklch(0% 0 0 / 0.16);
+  filter: blur(0.6px);
+  opacity: var(--p-o, 0.24);
+  transform: rotate(var(--p-rot, 0deg));
+  animation: glass-drift var(--p-dur, 44s) ease-in-out infinite;
+  animation-delay: var(--p-delay, 0s);
+  will-change: transform, opacity;
+}
+
+.glass-particle--shard {
+  border-radius: 0;
+  clip-path: polygon(48% 0%, 100% 32%, 78% 100%, 20% 90%, 0% 38%);
+  background: linear-gradient(
+    135deg,
+    oklch(100% 0 0 / 0.28) 0%,
+    oklch(100% 0 0 / 0.03) 55%,
+    oklch(96% 0.05 214 / 0.16) 100%
+  );
+}
+
+.glass-particle__shine {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(115deg, transparent 42%, oklch(100% 0 0 / 0.5) 50%, transparent 58%);
+  opacity: 0.16;
+  filter: blur(1px);
+  animation: glass-shine var(--p-dur, 44s) ease-in-out infinite;
+  animation-delay: var(--p-delay, 0s);
+}
+
+@keyframes glass-drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0) scale(1) rotate(var(--p-rot, 0deg));
+    opacity: var(--p-o, 0.24);
+  }
+  50% {
+    transform: translate3d(var(--p-tx, 12px), var(--p-ty, -20px), 0) scale(var(--p-scale, 1.08))
+      rotate(calc(var(--p-rot, 0deg) + 60deg));
+    opacity: calc(var(--p-o, 0.24) * 0.55);
+  }
+}
+
+@keyframes glass-shine {
+  0%,
+  100% {
+    transform: translateX(-26%);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translateX(26%);
+    opacity: 0.22;
+  }
+}
+
+@media (max-width: 640px) {
+  .glass-layer {
+    opacity: 0.8;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glass-particle,
+  .glass-particle__shine {
+    animation-duration: var(--p-dur, 44s) !important;
+    animation-iteration-count: infinite !important;
+  }
+}

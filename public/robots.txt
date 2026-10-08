@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Substitua o domínio abaixo pelo domínio final do cliente antes do deploy.
+Sitemap: https://vidrolink.com.br/sitemap.xml

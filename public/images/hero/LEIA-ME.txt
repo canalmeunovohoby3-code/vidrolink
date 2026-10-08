@@ -1,0 +1,10 @@
+FOTO PRINCIPAL (HERO)
+=====================
+
+Coloque aqui a foto principal da vidraçaria / de um trabalho de destaque.
+
+Nome esperado:
+  hero.webp   (ou ajuste o caminho em src/data/site.ts -> hero.image.src)
+
+Recomendação: imagem horizontal, boa iluminação, ~1600px de largura.
+Enquanto não existir, o Hero mostra um placeholder identificado.

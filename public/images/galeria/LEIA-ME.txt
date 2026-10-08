@@ -1,0 +1,27 @@
+FOTOS DOS TRABALHOS REALIZADOS
+==============================
+
+Coloque aqui as 10 fotos reais dos serviços do cliente, com estes nomes fixos:
+
+  01.webp
+  02.webp
+  03.webp
+  04.webp
+  05.webp
+  06.webp
+  07.webp
+  08.webp
+  09.webp
+  10.webp
+
+O site procura exatamente esses nomes. Assim que os arquivos existirem,
+eles aparecem automaticamente na seção "Nossos trabalhos", sem alterar código.
+
+Observações:
+- Formatos: .webp é o recomendado (leve e nítido). Se preferir outro formato,
+  ajuste as extensões em src/data/gallery.ts.
+- Fotos verticais (retrato) ficam mais bonitas nesta galeria, mas o layout
+  aceita qualquer proporção sem cortes.
+- Enquanto um arquivo estiver faltando, o espaço mostra um placeholder
+  identificado ("Imagem 01 — adicione a foto").
+- NÃO usar fotos de banco de imagens como se fossem do cliente.

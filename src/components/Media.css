@@ -1,0 +1,11 @@
+.media--square {
+  border-radius: 0;
+}
+
+.media--natural.media--loaded {
+  aspect-ratio: auto;
+}
+
+.media--natural.media--loaded .media__img {
+  height: auto;
+}

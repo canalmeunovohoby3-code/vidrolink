@@ -1,0 +1,38 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo__mark {
+  height: var(--logo-h, 40px);
+  width: auto;
+  max-width: 210px;
+  object-fit: contain;
+}
+
+.logo__ph {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  padding: 6px 12px;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--r-sm);
+  background: oklch(100% 0 0 / 0.03);
+}
+
+.logo__ph-tag {
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+}
+
+.logo__ph-name {
+  font-weight: 800;
+  font-size: calc(var(--logo-h, 40px) * 0.38);
+  line-height: 1;
+  letter-spacing: 0.08em;
+  color: var(--fg);
+}

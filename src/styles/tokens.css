@@ -1,0 +1,76 @@
+:root {
+  --bg: oklch(17% 0.03 233);
+  --bg-deep: oklch(13% 0.028 235);
+  --surface: oklch(22% 0.033 231);
+  --surface-soft: oklch(26% 0.03 231);
+  --surface-2: oklch(30% 0.032 229);
+  --popover: oklch(20% 0.032 231);
+
+  --fg: oklch(95% 0.008 240);
+  --fg-muted: oklch(70% 0.028 235);
+  --silver: oklch(88% 0.012 240);
+  --silver-soft: oklch(74% 0.018 240);
+
+  --primary: oklch(74% 0.128 214);
+  --primary-strong: oklch(80% 0.13 210);
+  --primary-fg: oklch(15% 0.03 234);
+  --primary-glow: oklch(74% 0.128 214 / 0.28);
+
+  --whatsapp: #32c5fb;
+  --whatsapp-strong: #5ad3ff;
+  --whatsapp-fg: #062a3d;
+  --whatsapp-glow: rgba(50, 197, 251, 0.34);
+  --whatsapp-glow-strong: rgba(50, 197, 251, 0.5);
+
+  --star: oklch(84% 0.14 88);
+
+  --border: oklch(100% 0 0 / 0.11);
+  --border-strong: oklch(100% 0 0 / 0.2);
+  --line: oklch(100% 0 0 / 0.07);
+  --card-hi: oklch(100% 0 0 / 0.05);
+
+  --card-2: oklch(19% 0.03 232);
+  --panel-bg: oklch(24% 0.036 231);
+  --panel-2: oklch(18% 0.03 233);
+  --panel-accent: linear-gradient(120deg, oklch(28% 0.05 216) 0%, oklch(20% 0.035 231) 100%);
+  --ghost-bg: oklch(100% 0 0 / 0.05);
+  --ghost-bg-hover: oklch(100% 0 0 / 0.1);
+  --ghost-border-hover: oklch(100% 0 0 / 0.32);
+  --chip-bg: oklch(100% 0 0 / 0.03);
+  --chip-hover-bg: oklch(100% 0 0 / 0.06);
+  --pill-bg: oklch(100% 0 0 / 0.04);
+  --star-empty: oklch(100% 0 0 / 0.2);
+  --light-section-bg: linear-gradient(180deg, oklch(96% 0.012 222) 0%, oklch(92% 0.016 222) 100%);
+
+  --font-sans: 'Manrope', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+
+  --fs-display: clamp(2.3rem, 5.4vw, 4rem);
+  --fs-h2: clamp(1.8rem, 3.4vw, 2.8rem);
+  --fs-h3: clamp(1.1rem, 1.5vw, 1.32rem);
+  --fs-lead: clamp(1rem, 1.1vw, 1.14rem);
+  --fs-body: 1rem;
+  --fs-small: 0.9rem;
+  --fs-label: 0.74rem;
+
+  --container: 1200px;
+  --gutter: clamp(20px, 4.5vw, 52px);
+  --section-y: clamp(72px, 8vw, 128px);
+  --nav-h: 76px;
+
+  --r-sm: 0.65rem;
+  --r-md: 1rem;
+  --r-lg: 1.35rem;
+  --r-xl: 1.85rem;
+  --r-pill: 999px;
+
+  --shadow-sm: 0 1px 0 oklch(100% 0 0 / 0.04) inset, 0 12px 28px oklch(0% 0 0 / 0.28);
+  --shadow-md: 0 1px 0 oklch(100% 0 0 / 0.05) inset, 0 26px 60px oklch(0% 0 0 / 0.42);
+  --shadow-glow: 0 18px 44px oklch(74% 0.128 214 / 0.22);
+
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 0.84, 0.44, 1);
+  --t-fast: 180ms;
+  --t-base: 320ms;
+  --t-slow: 640ms;
+}

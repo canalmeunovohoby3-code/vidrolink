@@ -1,0 +1,19 @@
+LOGO OFICIAL DA EMPRESA
+=======================
+
+Coloque aqui o arquivo oficial do logo enviado pelo cliente.
+
+Nomes aceitos (o site procura nesta ordem):
+  1) logo.svg
+  2) logo.png
+
+Recomendações:
+- PNG com fundo transparente, ou SVG para melhor nitidez.
+- Altura recomendada: pelo menos 96px (o site exibe em ~40px no cabeçalho).
+- Não é necessário renomear dimensões: se quiser ajustar, edite
+  src/data/site.ts (logoWidth / logoHeight).
+
+Enquanto nenhum arquivo existir, o site mostra um placeholder
+claramente identificado como "LOGO OFICIAL AQUI" (sem criar logo fictícia).
+Assim que o arquivo for adicionado com o nome correto, ele aparece
+automaticamente no cabeçalho e no rodapé.

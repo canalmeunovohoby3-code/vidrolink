@@ -1,0 +1,121 @@
+.footer {
+  background: oklch(12% 0.028 235 / 0.9);
+  color: var(--fg-muted);
+  border-top: 1px solid var(--line);
+  padding-top: clamp(52px, 6vw, 84px);
+}
+
+.footer__inner {
+  display: grid;
+  gap: clamp(30px, 4vw, 52px);
+  padding-bottom: clamp(38px, 5vw, 60px);
+}
+
+.footer__brand {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 320px;
+}
+
+.footer__desc {
+  font-size: var(--fs-small);
+  color: var(--fg-muted);
+}
+
+.footer__cta {
+  align-self: flex-start;
+}
+
+.footer__title {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--silver-soft);
+  margin-bottom: 18px;
+}
+
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.footer__list--info li {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.footer__list--info svg {
+  width: 17px;
+  height: 17px;
+  flex: none;
+  margin-top: 3px;
+  color: var(--primary);
+}
+
+.footer__link {
+  font-size: var(--fs-small);
+  color: var(--fg-muted);
+  transition: color var(--t-fast) linear;
+}
+
+.footer__link:hover {
+  color: var(--fg);
+}
+
+.footer__rating {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 18px;
+  font-size: 0.8rem;
+}
+
+.footer__rating strong {
+  color: var(--fg);
+}
+
+.footer__coverage {
+  font-size: var(--fs-small);
+  color: var(--fg-muted);
+  max-width: 34ch;
+}
+
+.footer__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-block: 22px;
+  border-top: 1px solid var(--line);
+  font-size: 0.82rem;
+  color: var(--fg-muted);
+}
+
+.footer__top {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--silver-soft);
+  transition: color var(--t-fast) linear, gap var(--t-base) var(--ease);
+}
+
+.footer__top svg {
+  width: 15px;
+  height: 15px;
+}
+
+.footer__top:hover {
+  color: var(--fg);
+  gap: 11px;
+}
+
+@media (min-width: 720px) {
+  .footer__inner {
+    grid-template-columns: 1.5fr 1fr 1.2fr 1fr;
+  }
+}

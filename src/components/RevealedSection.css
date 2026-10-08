@@ -22,9 +22,13 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .section-reveal {
-    opacity: 1;
+  .section-reveal,
+  .section-reveal.is-visible {
+    transition-duration: 800ms !important;
+    transform: translateY(24px);
+  }
+
+  .section-reveal.is-visible {
     transform: none;
-    transition: none;
   }
 }

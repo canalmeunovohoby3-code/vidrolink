@@ -1,11 +1,12 @@
 import { Reveal } from '../components/Reveal'
+import { RevealedSection } from '../components/RevealedSection'
 import { IconArrowRight, IconWhatsApp } from '../components/Icons'
 import { ctaBanner, site, whatsappLink } from '../data/site'
 import './CtaBanner.css'
 
 export function CtaBanner() {
   return (
-    <section id="contato" className="section cta">
+    <RevealedSection id="contato" className="section cta">
       <div className="container">
         <Reveal className="cta__card">
           <span className="cta__glow" aria-hidden="true" />
@@ -26,6 +27,6 @@ export function CtaBanner() {
           </span>
         </Reveal>
       </div>
-    </section>
+    </RevealedSection>
   )
 }

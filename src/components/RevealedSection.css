@@ -1,0 +1,30 @@
+.section-reveal {
+  opacity: 0;
+  transform: translateY(40px) scale(0.99);
+  transition: opacity 900ms var(--ease), transform 900ms var(--ease);
+}
+
+.section-reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+.section-reveal .reveal {
+  opacity: 1;
+  transform: none;
+  transition: none;
+}
+
+@media (max-width: 640px) {
+  .section-reveal {
+    transform: translateY(24px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .section-reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}

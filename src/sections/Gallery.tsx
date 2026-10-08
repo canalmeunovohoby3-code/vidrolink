@@ -1,5 +1,6 @@
 import { useCallback, useState } from 'react'
 import { Reveal } from '../components/Reveal'
+import { RevealedSection } from '../components/RevealedSection'
 import { Lightbox } from '../components/Lightbox'
 import { Media } from '../components/Media'
 import { IconArrowUpRight } from '../components/Icons'
@@ -25,7 +26,7 @@ export function Gallery() {
   }, [])
 
   return (
-    <section id="galeria" className="section section--deep gallery-section">
+    <RevealedSection id="galeria" className="section section--deep gallery-section">
       <div className="container">
         <div className="sec-head">
           <Reveal>
@@ -79,6 +80,6 @@ export function Gallery() {
         onClose={() => setOpen(false)}
         onNavigate={setIndex}
       />
-    </section>
+    </RevealedSection>
   )
 }

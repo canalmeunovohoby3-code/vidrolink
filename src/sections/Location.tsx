@@ -1,11 +1,12 @@
 import { Reveal } from '../components/Reveal'
+import { RevealedSection } from '../components/RevealedSection'
 import { IconArrowRight, IconArrowUpRight, IconClock, IconPin, IconWhatsApp } from '../components/Icons'
 import { coverage, location, mapsEmbed, mapsLink, site, whatsappLink } from '../data/site'
 import './Location.css'
 
 export function Location() {
   return (
-    <section id="localizacao" data-theme="light" className="section section--soft location">
+    <RevealedSection id="localizacao" theme="light" className="section section--soft location">
       <div className="container">
         <div className="sec-head">
           <Reveal>
@@ -103,6 +104,6 @@ export function Location() {
           <p className="location__closing">{coverage.closing}</p>
         </Reveal>
       </div>
-    </section>
+    </RevealedSection>
   )
 }

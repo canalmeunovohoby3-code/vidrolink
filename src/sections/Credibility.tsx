@@ -1,11 +1,12 @@
 import { Reveal } from '../components/Reveal'
+import { RevealedSection } from '../components/RevealedSection'
 import { IconCheck, RatingStars } from '../components/Icons'
 import { credibility, site } from '../data/site'
 import './Credibility.css'
 
 export function Credibility() {
   return (
-    <section className="credibility" data-theme="light">
+    <RevealedSection className="credibility" theme="light">
       <div className="container">
         <Reveal className="credibility__card">
           <div className="credibility__score">
@@ -27,6 +28,6 @@ export function Credibility() {
           </div>
         </Reveal>
       </div>
-    </section>
+    </RevealedSection>
   )
 }

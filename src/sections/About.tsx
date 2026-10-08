@@ -1,10 +1,11 @@
 import { Reveal } from '../components/Reveal'
+import { RevealedSection } from '../components/RevealedSection'
 import { about } from '../data/site'
 import './About.css'
 
 export function About() {
   return (
-    <section id="empresa" className="section about">
+    <RevealedSection id="empresa" className="section about">
       <div className="container about__inner">
         <div className="about__head">
           <Reveal>
@@ -36,6 +37,6 @@ export function About() {
           </ul>
         </Reveal>
       </div>
-    </section>
+    </RevealedSection>
   )
 }

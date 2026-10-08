@@ -1,11 +1,12 @@
 import { Reveal } from '../components/Reveal'
+import { RevealedSection } from '../components/RevealedSection'
 import { DifferentialIcon } from '../components/Icons'
 import { differentials, differentialsHead } from '../data/differentials'
 import './Differentials.css'
 
 export function Differentials() {
   return (
-    <section id="diferenciais" className="section section--deep differentials">
+    <RevealedSection id="diferenciais" className="section section--deep differentials">
       <div className="container">
         <div className="sec-head">
           <Reveal>
@@ -33,6 +34,6 @@ export function Differentials() {
           ))}
         </div>
       </div>
-    </section>
+    </RevealedSection>
   )
 }

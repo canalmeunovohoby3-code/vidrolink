@@ -1,4 +1,5 @@
 import { Reveal } from '../components/Reveal'
+import { RevealedSection } from '../components/RevealedSection'
 import { RatingStars } from '../components/Icons'
 import { site } from '../data/site'
 import { testimonials, testimonialsHead } from '../data/testimonials'
@@ -6,7 +7,7 @@ import './Testimonials.css'
 
 export function Testimonials() {
   return (
-    <section data-theme="light" className="section section--soft testimonials">
+    <RevealedSection theme="light" className="section section--soft testimonials">
       <div className="container">
         <div className="sec-head">
           <Reveal>
@@ -47,6 +48,6 @@ export function Testimonials() {
           </span>
         </Reveal>
       </div>
-    </section>
+    </RevealedSection>
   )
 }

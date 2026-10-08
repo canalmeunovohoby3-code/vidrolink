@@ -1,4 +1,5 @@
 import { Reveal } from '../components/Reveal'
+import { RevealedSection } from '../components/RevealedSection'
 import { IconArrowRight, IconCheck, IconWhatsApp, ServiceIcon } from '../components/Icons'
 import { services, servicesHead } from '../data/services'
 import { whatsappLink } from '../data/site'
@@ -6,7 +7,7 @@ import './Services.css'
 
 export function Services() {
   return (
-    <section id="servicos" data-theme="light" className="section section--soft services">
+    <RevealedSection id="servicos" theme="light" className="section section--soft services">
       <div className="container">
         <div className="sec-head">
           <Reveal>
@@ -72,6 +73,6 @@ export function Services() {
           </Reveal>
         </div>
       </div>
-    </section>
+    </RevealedSection>
   )
 }

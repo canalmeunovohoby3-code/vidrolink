@@ -56,7 +56,7 @@
   --container: 1200px;
   --gutter: clamp(20px, 4.5vw, 52px);
   --section-y: clamp(72px, 8vw, 128px);
-  --nav-h: 76px;
+  --nav-h: 86px;
 
   --r-sm: 0.65rem;
   --r-md: 1rem;

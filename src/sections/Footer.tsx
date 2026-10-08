@@ -18,7 +18,7 @@ export function Footer() {
     <footer className="footer">
       <div className="container footer__inner">
         <div className="footer__brand">
-          <Logo size={62} />
+          <Logo size={104} />
           <p className="footer__desc">
             Vidraçaria especializada em vidros sob medida e instalações residenciais e comerciais em
             Resende, RJ.

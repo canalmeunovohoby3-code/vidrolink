@@ -31,7 +31,7 @@ export function Navbar() {
             onClick={close}
             aria-label="Vidrolink — ir para o início"
           >
-            <Logo size={44} />
+            <Logo size={58} />
           </a>
 
           <nav className="nav__links" aria-label="Navegação principal">

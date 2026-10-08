@@ -6,7 +6,7 @@
 .logo__mark {
   height: var(--logo-h, 40px);
   width: auto;
-  max-width: 210px;
+  max-width: 280px;
   object-fit: contain;
 }
 

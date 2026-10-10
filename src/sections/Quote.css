@@ -1,0 +1,137 @@
+.quote__inner {
+  display: grid;
+  gap: clamp(32px, 4.5vw, 64px);
+  align-items: center;
+}
+
+.quote__title {
+  margin-top: 18px;
+  max-width: 20ch;
+}
+
+.quote__intro .sec-sub {
+  margin-top: 16px;
+}
+
+.quote__direct {
+  margin-top: 30px;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+}
+
+.quote__direct-label {
+  display: block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--fg-muted);
+  margin-bottom: 16px;
+}
+
+.quote__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.quote__contact {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.98rem;
+  color: var(--fg);
+  transition: color var(--t-fast) linear;
+}
+
+.quote__contact svg {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  color: var(--primary);
+}
+
+a.quote__contact:hover {
+  color: var(--primary);
+}
+
+.quote__card {
+  padding: clamp(24px, 3vw, 36px);
+}
+
+.quote__card:hover {
+  transform: none;
+}
+
+.quote__form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.quote__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.quote__label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--silver-soft);
+}
+
+.quote__input {
+  width: 100%;
+  padding: 13px 15px;
+  border-radius: var(--r-sm);
+  border: 1px solid var(--border);
+  background: oklch(100% 0 0 / 0.04);
+  color: var(--fg);
+  font-size: 1rem;
+  transition: border-color var(--t-fast) linear, background-color var(--t-fast) linear,
+    box-shadow var(--t-fast) linear;
+}
+
+.quote__input::placeholder {
+  color: var(--fg-muted);
+}
+
+.quote__input:hover {
+  border-color: var(--border-strong);
+}
+
+.quote__input:focus {
+  outline: none;
+  border-color: var(--primary);
+  background: oklch(100% 0 0 / 0.06);
+  box-shadow: 0 0 0 3px oklch(74% 0.128 214 / 0.2);
+}
+
+.quote__select {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+  padding-right: 42px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%237c8a95' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+}
+
+.quote__select option {
+  color: #0f1720;
+  background: #ffffff;
+}
+
+.quote__submit {
+  margin-top: 6px;
+  width: 100%;
+}
+
+@media (min-width: 900px) {
+  .quote__inner {
+    grid-template-columns: 1fr 1fr;
+  }
+}

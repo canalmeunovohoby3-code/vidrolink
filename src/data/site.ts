@@ -97,10 +97,16 @@ export const location = {
   coverageLabel: 'Área de atuação',
 } as const
 
-export const ctaBanner = {
-  title: 'Precisa de vidro sob medida? Fale com a Vidrolink.',
+export const quote = {
+  eyebrow: 'Orçamento',
+  title: 'Solicite seu orçamento',
   description:
-    'Envie uma mensagem pelo WhatsApp, receba seu orçamento com agilidade e agende a medição no seu horário.',
-  cta: 'Solicitar Orçamento no WhatsApp',
-  note: 'Atendimento rápido',
+    'Preencha os campos e envie direto pelo WhatsApp — a mensagem vai pronta para a Vidrolink.',
+  nameLabel: 'Nome',
+  contactLabel: 'Contato',
+  serviceLabel: 'Serviço desejado',
+  servicePlaceholder: 'Selecione um serviço',
+  otherOption: 'Outro',
+  submitLabel: 'Enviar pelo WhatsApp',
+  directLabel: 'Prefere falar agora?',
 } as const

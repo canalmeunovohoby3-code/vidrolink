@@ -7,7 +7,7 @@ import { Differentials } from './sections/Differentials'
 import { Testimonials } from './sections/Testimonials'
 import { Gallery } from './sections/Gallery'
 import { Location } from './sections/Location'
-import { CtaBanner } from './sections/CtaBanner'
+import { Quote } from './sections/Quote'
 import { Footer } from './sections/Footer'
 import { WhatsAppFloat } from './components/WhatsAppFloat'
 import { GlassParticles } from './components/GlassParticles'
@@ -31,7 +31,7 @@ export function App() {
         <Testimonials />
         <Gallery />
         <Location />
-        <CtaBanner />
+        <Quote />
       </main>
 
       <Footer />

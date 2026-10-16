@@ -1,4 +1,4 @@
-import type { AudioTestimonial, Testimonial } from '../types'
+import type { Testimonial, VideoTestimonial } from '../types'
 
 export const testimonialsHead = {
   eyebrow: 'Avaliações',
@@ -37,14 +37,14 @@ export const testimonials: Testimonial[] = [
   },
 ]
 
-export const audioTestimonialsHead = {
+export const videoTestimonialsHead = {
   eyebrow: 'Depoimentos',
-  title: 'Ouça quem já contratou a Vidrolink',
-  description: 'Depoimentos gravados por clientes atendidos em Resende e região.',
+  title: 'Depoimentos em vídeo',
+  description: 'Vídeos gravados por clientes atendidos em Resende e região.',
 }
 
-export const audioTestimonials: AudioTestimonial[] = [
-  { id: 'audio-01', title: 'Depoimento 01', src: '/video1.mp4' },
-  { id: 'audio-02', title: 'Depoimento 02', src: '/video2.mp4' },
-  { id: 'audio-03', title: 'Depoimento 03', src: '/video3.mp4' },
+export const videoTestimonials: VideoTestimonial[] = [
+  { id: 'video-01', title: 'Depoimento 01', src: '/video1.mp4' },
+  { id: 'video-02', title: 'Depoimento 02', src: '/video2.mp4' },
+  { id: 'video-03', title: 'Depoimento 03', src: '/video3.mp4' },
 ]

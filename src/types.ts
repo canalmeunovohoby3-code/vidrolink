@@ -37,7 +37,7 @@ export type Testimonial = {
   source: string
 }
 
-export type AudioTestimonial = {
+export type VideoTestimonial = {
   id: string
   title: string
   src: string

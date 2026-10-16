@@ -8,7 +8,7 @@ import { Testimonials } from './sections/Testimonials'
 import { Gallery } from './sections/Gallery'
 import { Location } from './sections/Location'
 import { Quote } from './sections/Quote'
-import { AudioTestimonials } from './sections/AudioTestimonials'
+import { VideoTestimonials } from './sections/VideoTestimonials'
 import { Footer } from './sections/Footer'
 import { WhatsAppFloat } from './components/WhatsAppFloat'
 import { GlassParticles } from './components/GlassParticles'
@@ -33,7 +33,7 @@ export function App() {
         <Gallery />
         <Location />
         <Quote />
-        <AudioTestimonials />
+        <VideoTestimonials />
       </main>
 
       <Footer />

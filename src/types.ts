@@ -37,6 +37,12 @@ export type Testimonial = {
   source: string
 }
 
+export type AudioTestimonial = {
+  id: string
+  title: string
+  src: string
+}
+
 export type GalleryItem = {
   id: string
   index: string
